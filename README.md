@@ -25,6 +25,7 @@ baheer/
 │   ├── App.jsx        # Main application component
 │   ├── index.css      # Global styles
 │   └── index.jsx      # Application entry point
+├── CHANGELOG.md       # Track all changes to the project
 └── ...config files    # Various configuration files
 ```
 
@@ -69,6 +70,10 @@ baheer/
 - Customize theme settings in the App component
 - Extend navigation in the Navbar component
 - Add new routes in the Routes component
+
+## Changelog
+
+For a detailed list of changes and version history, please refer to the [CHANGELOG.md](CHANGELOG.md) file.
 
 ## License
 
