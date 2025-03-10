@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router'
+import Search from './Search'
+
 function Navbar({ darkTheme, setDarkTheme }) {
   return (
     <div className="p-5 pb-0 flex flex-wrap sm:justify-between justify-center items-center border-b dark:border-b-gray-700 border-gray-200">
@@ -11,6 +13,7 @@ function Navbar({ darkTheme, setDarkTheme }) {
           {darkTheme ? 'light' : 'dark'} Theme
         </button>
       </div>
+      <Search />
     </div>
   )
 }
