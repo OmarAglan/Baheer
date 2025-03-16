@@ -1,6 +1,6 @@
-import React from 'react'
-import {Route, Routes, Navigate} from 'react-router'
-import Results from './Results'
+import React from 'react';
+import { Navigate, Route, Routes } from 'react-router';
+import Results from './Results';
 
 function AppRoutes() {
   return (
@@ -14,7 +14,7 @@ function AppRoutes() {
         <Route path="/shopping" element={<Results />} />
       </Routes>
     </div>
-  )
+  );
 }
 
-export default AppRoutes
+export default AppRoutes;
