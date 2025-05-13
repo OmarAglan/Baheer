@@ -1,19 +1,19 @@
 import React from 'react';
-import { Navigate, Route, Routes } from 'react-router';
+import { Route, Routes } from 'react-router'; // Removed Navigate for now, might not be needed if / is landing
 import Results from './Results';
+import LandingPage from './LandingPage'; // Import LandingPage
 
 function AppRoutes() {
   return (
-    <div className='p-4'>
-      <Routes>
-        <Route path="/" element={<Navigate to="/search" replace />} />
-        <Route path="/search" element={<Results />} />
-        <Route path="/images" element={<Results />} />
-        <Route path="/videos" element={<Results />} />
-        <Route path="/news" element={<Results />} />
-        <Route path="/shopping" element={<Results />} />
-      </Routes>
-    </div>
+    // Removed the p-4 div wrapper, as LandingPage and Results might want full control of their padding
+    <Routes>
+      <Route path="/" element={<LandingPage />} /> {/* Root path now shows LandingPage */}
+      <Route path="/search" element={<Results />} />
+      <Route path="/images" element={<Results />} />
+      <Route path="/videos" element={<Results />} />
+      <Route path="/news" element={<Results />} />
+      <Route path="/shopping" element={<Results />} /> {/* Assuming /shopping is a valid results type */}
+    </Routes>
   );
 }
 

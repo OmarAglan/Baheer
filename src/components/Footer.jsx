@@ -2,11 +2,11 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div className='p-10 mt-10 border-t text-center dark:border-t-gray-700 border-gray-200'>
-        <footer>
-            <p className='text-gray-500 dark:text-gray-400'>© 2025 Baheer. All rights reserved.</p>
-        </footer>
-    </div>
+    <footer className='text-center p-4 mt-auto border-t dark:border-gray-700 border-gray-200 bg-gray-50 dark:bg-gray-800'>
+      <p className='text-sm text-gray-600 dark:text-gray-400'>
+        © {new Date().getFullYear()} Baheer. All rights reserved.
+      </p>
+    </footer>
   )
 }
 
