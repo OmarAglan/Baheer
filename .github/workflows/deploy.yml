@@ -2,8 +2,8 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches:
-      - main # Set a branch to deploy
+    branches: [main] # Trigger on pushes to the main branch
+  workflow_dispatch: # Allows manual triggering from the GitHub Actions tab
 
 jobs:
   deploy:
