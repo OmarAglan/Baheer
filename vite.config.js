@@ -5,5 +5,6 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/baheer/', // Replace 'baheer' with your repository name if different
   plugins: [react(), tailwindcss()]
 })
